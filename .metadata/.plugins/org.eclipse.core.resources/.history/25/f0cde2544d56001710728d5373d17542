@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+zuul:  
+  routes: 
+    customer-by-service:
+      path: /cons/**
+      url: http://locahost:8081
+      
+ 
+ribbon:
+  eureka:
+   enabled: false 
+  
+
+  

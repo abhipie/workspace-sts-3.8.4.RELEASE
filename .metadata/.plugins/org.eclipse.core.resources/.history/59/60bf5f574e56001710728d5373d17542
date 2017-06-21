@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+zuul:  
+  routes: 
+    customer:
+      path: /cons/**
+      url: http://locahost:8081
+      
+ 
+
+  
+
+  

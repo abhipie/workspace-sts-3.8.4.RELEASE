@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: edge-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/    
+zuul:  
+  prefix: /api
+  routes: 
+    customer:
+      path: /cons/**
+      service-id: CONSUMER-SERVICE
+    greeting:
+      path: /greet/**
+      service-id: GREETING
+      

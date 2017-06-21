@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: edge-service
+zuul:  
+  routes: 
+    customer:
+      path: /cons/**
+      url: http://localhost:8081
+      

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+zuul:
+  prefix: /api
+  routes: 
+    customer-by-service:
+      path: /cons/**
+      serviceId: http://locahost:8081
+ 
+ ribbon:
+  eureka:
+  enabled: false 
+  
+
+  

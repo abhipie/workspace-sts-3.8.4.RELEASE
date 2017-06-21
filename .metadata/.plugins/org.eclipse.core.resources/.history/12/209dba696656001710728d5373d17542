@@ -1,0 +1,11 @@
+package com.example.demo;
+
+public class GreetClientImpl implements GreetClient{
+
+	@Override
+	public String greetName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
